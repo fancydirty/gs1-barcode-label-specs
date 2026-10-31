@@ -1,0 +1,91 @@
+{
+  "version": "2026.10",
+  "source": "https://upclabelmaker.com",
+  "license": "CC-BY-4.0",
+  "stocks": [
+    {
+      "id": "avery_5160",
+      "aliases": ["avery_8160", "30_up_address"],
+      "name": "Avery 5160 / 8160 (30-up US Letter)",
+      "pageSize": { "widthIn": 8.5, "heightIn": 11.0, "widthPt": 612.0, "heightPt": 792.0 },
+      "grid": { "columns": 3, "rows": 10, "labelsPerSheet": 30 },
+      "labelSize": { "widthIn": 2.625, "heightIn": 1.0, "widthMm": 66.675, "heightMm": 25.4, "widthPt": 189.0, "heightPt": 72.0 },
+      "margins": { "topIn": 0.5, "bottomIn": 0.5, "leftIn": 0.1875, "rightIn": 0.1875 },
+      "pitch": { "horizontalIn": 2.75, "verticalIn": 1.0, "horizontalGapIn": 0.125, "verticalGapIn": 0.0 },
+      "templateUrl": "https://upclabelmaker.com/avery-5160-template",
+      "guideUrl": "https://upclabelmaker.com/guides/how-to-print-avery-5160-labels"
+    },
+    {
+      "id": "avery_5163",
+      "aliases": ["avery_8163", "10_up_shipping"],
+      "name": "Avery 5163 / 8163 (10-up Shipping Sheet)",
+      "pageSize": { "widthIn": 8.5, "heightIn": 11.0, "widthPt": 612.0, "heightPt": 792.0 },
+      "grid": { "columns": 2, "rows": 5, "labelsPerSheet": 10 },
+      "labelSize": { "widthIn": 4.0, "heightIn": 2.0, "widthMm": 101.6, "heightMm": 50.8, "widthPt": 288.0, "heightPt": 144.0 },
+      "margins": { "topIn": 0.5, "bottomIn": 0.5, "leftIn": 0.15625, "rightIn": 0.15625 },
+      "pitch": { "horizontalIn": 4.1875, "verticalIn": 2.0, "horizontalGapIn": 0.1875, "verticalGapIn": 0.0 },
+      "templateUrl": "https://upclabelmaker.com/avery-5163-template"
+    },
+    {
+      "id": "thermal_2x1",
+      "aliases": ["zebra_2x1", "rollo_2x1", "dymo_2x1"],
+      "name": "2 x 1 in Direct Thermal Roll (1-up)",
+      "pageSize": { "widthIn": 2.0, "heightIn": 1.0, "widthPt": 144.0, "heightPt": 72.0 },
+      "grid": { "columns": 1, "rows": 1, "labelsPerSheet": 1 },
+      "labelSize": { "widthIn": 2.0, "heightIn": 1.0, "widthMm": 50.8, "heightMm": 25.4, "widthPt": 144.0, "heightPt": 72.0 },
+      "margins": { "topIn": 0.0, "bottomIn": 0.0, "leftIn": 0.0, "rightIn": 0.0 },
+      "pitch": { "horizontalIn": 2.0, "verticalIn": 1.0, "horizontalGapIn": 0.0, "verticalGapIn": 0.0 },
+      "templateUrl": "https://upclabelmaker.com/thermal-2x1-labels"
+    },
+    {
+      "id": "carton_4x6",
+      "aliases": ["shipping_4x6", "master_carton_4x6"],
+      "name": "4 x 6 in Master Carton Thermal Roll (1-up)",
+      "pageSize": { "widthIn": 4.0, "heightIn": 6.0, "widthPt": 288.0, "heightPt": 432.0 },
+      "grid": { "columns": 1, "rows": 1, "labelsPerSheet": 1 },
+      "labelSize": { "widthIn": 4.0, "heightIn": 6.0, "widthMm": 101.6, "heightMm": 152.4, "widthPt": 288.0, "heightPt": 432.0 },
+      "margins": { "topIn": 0.0, "bottomIn": 0.0, "leftIn": 0.0, "rightIn": 0.0 },
+      "pitch": { "horizontalIn": 4.0, "verticalIn": 6.0, "horizontalGapIn": 0.0, "verticalGapIn": 0.0 },
+      "templateUrl": "https://upclabelmaker.com/upc-label-generator"
+    }
+  ],
+  "symbologies": [
+    {
+      "id": "UPC-A",
+      "digits": 12,
+      "nominalXDimensionMm": 0.33,
+      "nominalWidthMm": 37.29,
+      "nominalHeightMm": 25.91,
+      "quietZoneLeftModules": 9,
+      "quietZoneRightModules": 9,
+      "magnificationRange": [0.8, 1.0, 1.2],
+      "toolUrl": "https://upclabelmaker.com/upc-label-generator"
+    },
+    {
+      "id": "EAN-13",
+      "digits": 13,
+      "nominalXDimensionMm": 0.33,
+      "nominalWidthMm": 37.29,
+      "nominalHeightMm": 25.91,
+      "quietZoneLeftModules": 11,
+      "quietZoneRightModules": 7,
+      "magnificationRange": [0.8, 1.0, 1.2],
+      "toolUrl": "https://upclabelmaker.com/ean-13-label-generator"
+    },
+    {
+      "id": "FNSKU_CODE128A",
+      "charset": "Code 128 Subset A (X00 / B0 alphanumeric 10-char)",
+      "nominalXDimensionMm": 0.33,
+      "quietZoneMinMm": 6.35,
+      "requiredFields": ["Barcode", "FNSKU String", "Product Title", "Item Condition (e.g. New)"],
+      "toolUrl": "https://upclabelmaker.com/amazon-fnsku-label-maker",
+      "guideUrl": "https://upclabelmaker.com/guides/amazon-barcode-requirements"
+    },
+    {
+      "id": "GS1_DATAMATRIX",
+      "standard": "ECC 200 + FNC1",
+      "applicationIdentifiers": ["(01) GTIN-14", "(17) Expiration YYMMDD", "(10) Batch / Lot"],
+      "toolUrl": "https://upclabelmaker.com/gs1-datamatrix-generator"
+    }
+  ]
+}
